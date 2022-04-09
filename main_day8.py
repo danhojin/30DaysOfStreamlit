@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import pydeck as pdk
 
-st.header('Find the oposite side of the Earth')
+st.header('Find the opposite side of the Earth')
 st.subheader('st.slider')
 
 lat = st.slider('Latitude', -90.0, 90.0, 37.57)
