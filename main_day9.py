@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import plotly.express as px
+# import plotly.express as px
 import altair as alt
 from vega_datasets import data
 
@@ -63,15 +63,15 @@ c = alt.Chart(source).mark_line().encode(
 
 st.altair_chart(c)
 
-st.write('Or, you can use **st.plotly_chart**')
+# st.write('Or, you can use **st.plotly_chart**')
 
-st.markdown("""
-```python
-fig = px.line(source_wide, x=source_wide.index, y=source_wide.columns)
-st.plotly_chart(fig)
-```
-""")
+# st.markdown("""
+# ```python
+# fig = px.line(source_wide, x=source_wide.index, y=source_wide.columns)
+# st.plotly_chart(fig)
+# ```
+# """)
 
 
-fig = px.line(source_wide, x=source_wide.index, y=source_wide.columns)
-st.plotly_chart(fig)
+# fig = px.line(source_wide, x=source_wide.index, y=source_wide.columns)
+# st.plotly_chart(fig)
