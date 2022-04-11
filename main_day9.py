@@ -7,6 +7,7 @@ import altair as alt
 
 # source = data.stocks()
 source = pd.read_csv("https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv")
+source['date'] = pd.to_datetime(source['date'])
 
 st.header('Day 9: Line chart')
 
