@@ -3,9 +3,10 @@ import numpy as np
 import pandas as pd
 # import plotly.express as px
 import altair as alt
-from vega_datasets import data
+# from vega_datasets import data
 
-source = data.stocks()
+# source = data.stocks()
+source = pd.read_csv("https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv")
 
 st.header('Day 9: Line chart')
 
